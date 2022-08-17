@@ -7,7 +7,7 @@ function Map() {
           <div className="App">
                 <LoadScript
                     id="script-loader"
-                    googleMapsApiKey="AIzaSyCNReGHN6Uan9yZY4Fjh0DwKN43q--Tya8"
+                    googleMapsApiKey=""
                     language="en"
                     region="us"
                 >
