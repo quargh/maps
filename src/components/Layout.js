@@ -10,7 +10,7 @@ export default function Layout({children}) {
       return (
           <div className={"GridContainer"} >
                 <div className={"ActionChild"}>
-                      <h1 className={"AppTitle"}>X-Navigator</h1>
+                      {/*      <h1 className={"AppTitle"}>X-Navigator</h1>*/}
 
                       <img
 
