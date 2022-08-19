@@ -1,7 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
   __overflow: hidden;
-  height: 100vH;
+  height: 100%;
 }
 
 .App-logo {
@@ -41,7 +45,7 @@
 
 
 .App-map {
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 .MapsContainer{
@@ -79,6 +83,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 1.7fr;
   gap: 0px 0px;
+  height: 100vh;
 }
 /*
 .ActionChild{
