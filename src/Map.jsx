@@ -5,6 +5,7 @@ import {NightStyle} from "./NightStyle";
 
 export default function Map() {
 
+
       const containerStyle = {
             width: '100%',
             height: '100%'
@@ -15,7 +16,7 @@ export default function Map() {
           <div className="App">
                 <LoadScript
                     id="script-loader"
-                    googleMapsApiKey=""
+                    googleMapsApiKey={process.env.REACT_APP_API_KEY}
                     language="de"
                     region="de"
                 >
@@ -35,7 +36,7 @@ export default function Map() {
                           zoom={12.0}
                           tilt={0}
 
-                          zoomControlOptions = {false}
+                          zoomControlOptions={false}
                           version="weekly"
                           on
                       ></GoogleMap>
