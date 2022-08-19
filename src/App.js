@@ -1,48 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 import {LoadScript, GoogleMap} from "@react-google-maps/api";
 
-function Map() {
-      return (
-          <div className="App">
-                <LoadScript
-                    id="script-loader"
-                    googleMapsApiKey=""
-                    language="en"
-                    region="us"
-                >
-                      <GoogleMap
-                          mapContainerClassName="App-map"
-                          center={{lat: 52.52047739093263, lng: 13.36653284549709}}
-                          zoom={12}
-                          version="weekly"
-                          on
-                      ></GoogleMap>
-                </LoadScript>
-          </div>
-      );
-}
+import {DayStyle} from "./DayStyle";
+import {NightStyle} from "./NightStyle";
+import ActionBar from "./ActionBar"
+import Layout from "./components/Layout"
+
+import Map from "./Map.jsx";
+import closeBox from "./images/close-box.png";
 
 function App() {
       return (
           <div className="App">
-                <header className="App-header">
+                <Layout>
 
-                      <img src={logo} className="App-logo" alt="logo"/>
-                      <Map/>
-                      <p>
-                            Edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <a
-                          className="App-link"
-                          href="https://reactjs.org"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                      >
-                            Learn Maps
-                      </a>
+                            <Map />
 
-                </header>
+                            <img
+                                src={closeBox}
+                                alt={"close"}
+                                width={30}
+                                height={30}
+                                className={"closeBox"}
+
+                            />
+
+
+                </Layout>
           </div>
       );
 }
