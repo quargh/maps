@@ -82,6 +82,12 @@
     top: 35px;
 }
 
+.Fullscreen {
+    position: absolute;
+    right: 100px;
+    top: 35px;
+}
+
 .GridContainer {
     display: grid;
     grid-template-columns: 1fr;
