@@ -15,7 +15,7 @@ export default function Map() {
           <div className="App">
                 <LoadScript
                     id="script-loader"
-                    googleMapsApiKey=""
+                    googleMapsApiKey="AIzaSyCNReGHN6Uan9yZY4Fjh0DwKN43q--Tya8"
                     language="de"
                     region="de"
                 >

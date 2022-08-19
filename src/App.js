@@ -18,15 +18,6 @@ function App() {
 
                             <Map />
 
-                            <img
-                                src={closeBox}
-                                alt={"close"}
-                                width={30}
-                                height={30}
-                                className={"closeBox"}
-
-                            />
-
 
                 </Layout>
           </div>
